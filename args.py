@@ -1,10 +1,14 @@
 import argparse
-
+ 
 def get_args():
-    # TODO: Add --input_dir, --output_dir argument
-    #*************add your code here*************
-
-
+    parser = argparse.ArgumentParser()
+ 
+    parser.add_argument("--input_dir")
+    parser.add_argument("--output_dir")
+ 
+    args = parser.parse_args()
+    return args
+ 
 
 
 
